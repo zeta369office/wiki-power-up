@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "WPUS - Wiki Power Up Speed",
+  "version": "1.5",
+  "permissions": ["contextMenus", "activeTab", "scripting", "storage"],
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["http://127.0.0.1:8000/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WPUS 設定</title>
+    <style>
+        body { background: #0d1117; color: white; padding: 20px; font-family: sans-serif; }
+        input { width: 100%; padding: 10px; margin: 10px 0; background: #161b22; color: white; border: 1px solid #30363d; border-radius: 6px; }
+        button { width: 100%; padding: 10px; background: #238636; color: white; border: none; cursor: pointer; border-radius: 6px; font-weight: bold; }
+        #status { color: #7ee787; font-size: 14px; margin-top: 10px; display: none; }
+    </style>
+</head>
+<body>
+    <h3>🛠️ WPUS API 設定</h3>
+    <input type="password" id="key" placeholder="貼上 xai-... 金鑰">
+    <button id="save">儲存設定</button>
+    <p id="status">✅ 金鑰已存入本地空間</p>
+    <script src="options.js"></script>
+</body>
+</html>
